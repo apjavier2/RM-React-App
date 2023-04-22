@@ -2,6 +2,7 @@ import { useGetCharacList } from '@/store/api-hooks/useGetCharacList';
 import style from '@/styles/charactersList.module.css';
 import React from 'react';
 import { Card } from 'antd';
+import { characterType } from '@/components/interface';
 
 
 const { Meta } = Card;
@@ -14,7 +15,7 @@ export default function CharacList() {
     if(error) return <div>Error!{error.message}</div>
 
     return <div className={style.charactersList}>
-        {data.characters.results.map((character) => {
+        {data.characters.results.map((character: characterType) => {
             return   <Card
             hoverable
             style={{ width: 340, margin: 20 }}

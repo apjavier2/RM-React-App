@@ -1,7 +1,6 @@
 import classes from "../styles/index.module.css";
-// import CharacList from '@/store/queries/charactersList';
-import CharacList from "../components/characList";
-import { Col, Divider, Row } from "antd";
+import CharacList from "./charPages/characList";
+import { Divider, Row } from "antd";
 
 export default function Home() {
   return (
