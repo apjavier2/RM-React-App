@@ -3,6 +3,7 @@
 import type { AppProps } from 'next/app';
 import { ApolloClient, ApolloProvider, InMemoryCache, gql } from "@apollo/client" ;
 import React from 'react';
+// import Home from '.';
 
 const client = new ApolloClient({
   uri: 'https://rickandmortyapi.com/graphql',
