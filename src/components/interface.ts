@@ -4,11 +4,3 @@ export interface characterType {
     name: string,
     gender: string
 }
-
-export interface characInfoType {
-    name: string,
-    species: string,
-    location: string,
-    status: string,
-    created: string
-};
