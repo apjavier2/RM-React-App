@@ -17,6 +17,7 @@ export default function CharacList() {
     return <div className={style.charactersList}>
         {data.characters.results.map((character: characterType) => {
             return   <Card
+            key={character.id}
             hoverable
             style={{ width: 340, margin: 20 }}
             cover={<img alt="example" src={character.image} />}
