@@ -1,7 +1,7 @@
 import '@/styles/globals.css';
 // import Home from './index'
 import type { AppProps } from 'next/app';
-import { ApolloClient, ApolloProvider, InMemoryCache, gql } from "@apollo/client" ;
+import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client" ;
 import React from 'react';
 
 const client = new ApolloClient({
