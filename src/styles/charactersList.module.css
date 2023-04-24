@@ -3,3 +3,11 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+.cardBg {
+    background-color: #a1d0fc;
+}
+
+.cardFont {
+    font-size: 15px;
+}
