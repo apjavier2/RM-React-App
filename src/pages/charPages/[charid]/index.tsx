@@ -1,10 +1,9 @@
-import { Col, Row, Descriptions, Typography } from "antd";
+import { Col, Row, Descriptions } from "antd";
 import { useGetCharacInfo } from "@/store/api-hooks/useGetCharacInfo";
 import { useRouter } from "next/router";
 import loadingSpinner from "@/components/spinner";
 import style from "@/styles/characInfo.module.css";
-
-const { Text } = Typography;
+import StatCon from "@/components/statusCondition";
 
 export default function CharacInfo() {
   const router = useRouter();
@@ -34,16 +33,7 @@ export default function CharacInfo() {
               {data.character.species}
             </Descriptions.Item>
             <Descriptions.Item label="Status">
-              {/* {data.character.status} */}
-              {(data.character.status === "Alive" && (
-                <Text type="success">{data.character.status}</Text>
-              )) ||
-                (data.character.status === "unknown" && (
-                  <Text type="warning">{data.character.status}</Text>
-                )) ||
-                (data.character.status === "Dead" && (
-                  <Text type="secondary">{data.character.status}</Text>
-                ))}
+            <StatCon />      {/* data.character.status /> */}
             </Descriptions.Item>
             <Descriptions.Item label="Created">
               {data.character.created}
