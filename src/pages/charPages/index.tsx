@@ -1,7 +1,7 @@
 import { useGetCharacList } from '@/store/api-hooks/useGetCharacList';
 import style from '@/styles/charactersList.module.css';
 import { Card } from 'antd';
-import { characterType } from '@/components/interface';
+import { characterType } from '@/utils/interface';
 import { useRouter } from 'next/router';
 import  loadingSpinner  from '@/components/spinner';
 
